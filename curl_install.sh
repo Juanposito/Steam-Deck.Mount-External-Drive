@@ -16,10 +16,10 @@ tmp_dir="/tmp/scawp.SDMED.install"
 
 rules_install_dir="/etc/udev/rules.d"
 service_install_dir="/etc/systemd/system"
-script_install_dir="/home/deck/.local/share/scawp/SDMED"
+script_install_dir="/home/juanposo/.local/share/scawp/SDMED"
 
 device_name="$(uname --nodename)"
-user="$(id -u deck)"
+user="$(id -u juanposo)"
 
 if [ "$device_name" != "steamdeck" ] || [ "$user" != "1000" ]; then
   zenity --question --width=400 \
